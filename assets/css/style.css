@@ -37,8 +37,14 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-}    
+}   
 main {
     /* Make main element take up all available space */
     flex: 1 0 auto;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
