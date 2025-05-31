@@ -22,6 +22,9 @@ header {
     background-color: lightblue;
 }
 
+h1 {
+    font-family: Oswald, sans-serif;
+}    
 main {
     /* Make main element take up all available space */
     flex: 1 0 auto;
