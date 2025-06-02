@@ -82,7 +82,7 @@ main {
 }
 
 /* Media queries */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     nav {
         display: block;
         position: relative;
@@ -93,7 +93,7 @@ main {
     #menu {
         display: flex;
     }
-    #menu {
+    #menu > li {
         padding-left: 1rem;
     }
     .nav-toggle-label {
@@ -111,8 +111,8 @@ main {
     }
 }
 
-@media screen and (min-width:992px) {
-    #menu > a:hover {
+@media screen and (min-width: 992px) {
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
