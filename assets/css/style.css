@@ -181,6 +181,9 @@ main {
     color: #3a3a3a;
 }
 
+#signup-form {
+    
+}
 /* Media queries */
 
 @media screen and (min-width: 568px) {
