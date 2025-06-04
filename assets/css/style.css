@@ -81,6 +81,8 @@ main {
     /* Make main element take up all available space */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 /* Hero Section */
 #hero {
@@ -166,6 +168,47 @@ main {
     line-height: 0;
 
 }
+
+#signup {
+    background-image: url(../images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    margin: 5px 0 20px 0;
+    width: 100%;
+    height: 25px;
+    padding: 0 5px;
+}
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.join-button {
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+}
 /* Footer */
 #social-networks {
     text-align: center;
@@ -181,9 +224,7 @@ main {
     color: #3a3a3a;
 }
 
-#signup-form {
-    
-}
+
 /* Media queries */
 
 @media screen and (min-width: 568px) {
@@ -216,6 +257,24 @@ main {
     }
     #photos {
         column-count: 3;
+    }
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        
+    }
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
     }
     /* Main Content */
     main {
